@@ -2,8 +2,73 @@
 
 O **Vistametric** é um ecossistema profissional de visualização e mapeamento 3D imersivo. Projetado para setores como imobiliário, industrial e patrimonial, o sistema permite transformar modelos 3D georreferenciados em experiências interativas de alta precisão, conectando o mundo 3D a visões panorâmicas de 360º.
 
+---
+
+## 👨‍💻 Como o sistema funciona
+
+O Vistametric opera em dois modos principais: **Desenvolvedor** (para edição e configuração) e **Visualizador** (para navegação segura e visualização final). O sistema detecta automaticamente o ambiente e adapta a interface conforme o perfil do usuário.
+
+
+---
+
+### O que são Hotspots e Endpoints?
+
+**Hotspots** são pontos interativos posicionados sobre o modelo 3D. Eles podem representar câmeras, locais de interesse ou pontos panorâmicos (com fotos 360º). Ao clicar em um hotspot, o usuário pode visualizar informações, imagens ou navegar para uma visão panorâmica.
+
+**Endpoints** (também chamados de "pontos de navegação") são posições pré-definidas no modelo que funcionam como destinos rápidos para a câmera. Eles facilitam a navegação entre diferentes áreas do modelo, como ambientes, cômodos ou setores.
+
+---
+
+## 📝 Passo a passo para criar Hotspots e Endpoints
+
+1. **Faça upload do modelo 3D**
+    - Acesse a aba de upload e envie um arquivo `.glb`.
+    - O modelo aparecerá na visualização principal.
+
+2. **Adicione um Hotspot ou Endpoint**
+    - Clique sobre o local desejado no modelo 3D.
+    - Escolha o tipo: *Hotspot* (ponto de interesse/panorama) ou *Endpoint* (posição de navegação/câmera).
+    - Para hotspots panorâmicos, faça upload de uma imagem 360º.
+
+3. **Edite as propriedades**
+    - Dê um nome ao ponto.
+    - Ajuste a escala, posição e vincule imagens se necessário.
+    - Para endpoints, defina a orientação da câmera.
+
+4. **Salve as alterações**
+    - Clique em "Salvar no Projeto" para gravar tudo no arquivo `project_config.json`.
+
+5. **Teste a navegação**
+    - Use a aba de navegação para alternar entre os endpoints criados.
+    - Clique nos hotspots para abrir panoramas ou informações.
+
+---
+
+## 🗂️ Abas e Navegação
+
+- **Modelos**: Selecione e troque entre diferentes modelos 3D disponíveis.
+- **Hotspots**: Veja, edite ou remova todos os hotspots do projeto.
+- **Endpoints**: Liste e navegue rapidamente entre todos os pontos de navegação.
+- **Editor**: Aba exclusiva do modo desenvolvedor, onde é possível criar, editar e salvar pontos.
+
+Para navegar entre os endpoints, basta clicar no nome do ponto desejado na aba de navegação. A câmera será movida automaticamente para a posição salva. Hotspots panorâmicos podem ser acessados clicando nos ícones sobre o modelo.
+
+No modo visualizador, apenas a navegação entre endpoints e visualização de hotspots está disponível, garantindo segurança e integridade dos dados.
+
+---
+
+---
+
+## ▶️ Teste agora mesmo!
+
+Você pode experimentar a aplicação online, sem instalar nada, acessando:
+
+👉 [Testar Vistametric](https://vistametric.vercel.app/)
+
+---
+
 > [!IMPORTANT]
-> **Nota de Experimento**: Este projeto foi desenvolvido **100% por Inteligência Artificial** através do **Antigravity (Google DeepMind)**. O objetivo deste desenvolvimento foi testar a capacidade, precisão e velocidade extrema na criação de um **MVP (Minimum Viable Product)** complexo em regime *no-code* assistido.
+> **Nota de Experimento**: Este projeto foi desenvolvido **100% usando Inteligência Artificial** através do **Antigravity (Google DeepMind)**. O objetivo deste desenvolvimento foi testar a capacidade, precisão e velocidade extrema na criação de um **MVP (Minimum Viable Product)** complexo em regime *no-code* assistido.
 
 ---
 
