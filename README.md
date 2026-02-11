@@ -3,17 +3,23 @@
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-blue?logo=next.js)
 ![Three.js](https://img.shields.io/badge/Three.js-3D-black?logo=three.js)
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
 ![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 <p align="center">
-    <img src="https://vistametric.vercel.app/banner.png" alt="Vistametric Banner" width="80%"/>
+    <img src="/public/assets/app-demo.png" alt="Vistametric Banner" width="80%"/>
 </p>
 
 <p align="center">
     <b>Visualização e mapeamento 3D imersivo para ambientes profissionais.</b>
 </p>
+
+---
+
+## 🚀 Testar Online
+
+👉 [Acesse a aplicação online](https://vistametric.vercel.app/)
 
 ---
 
@@ -44,21 +50,13 @@ O **Vistametric** é um sistema para visualização, navegação e documentaçã
 <p>
     <img src="https://img.shields.io/badge/Next.js-16-blue?logo=next.js"/>
     <img src="https://img.shields.io/badge/Three.js-3D-black?logo=three.js"/>
-    <img src="https://img.shields.io/badge/React-18-blue?logo=react"/>
+    <img src="https://img.shields.io/badge/React-19-blue?logo=react"/>
     <img src="https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel"/>
     <img src="https://img.shields.io/badge/IndexedDB-Local%20Storage-yellow"/>
 </p>
 
 ---
 
-
-## 🎬 Demonstração Visual
-
-<p align="center">
-    <img src="/public/assets/app-demo.png" alt="Vistametric App Demo" width="80%"/>
-</p>
-
----
 
 
 ## 👤 Guia do Usuário
@@ -75,7 +73,47 @@ O **Vistametric** é um sistema para visualização, navegação e documentaçã
 5. Navegue entre endpoints e acesse hotspots pelas abas:
     - **Modelos**: Troca de modelos 3D
     - **Endpoints**: Navegação rápida
-    - **Hotspots**: Gerenciamento dos pontos
+
+        - **Hotspots**: Gerenciamento dos pontos
+
+---
+
+## 🎛️ Ajustando velocidades e câmeras
+
+### Ajuste de velocidade de navegação e câmera
+
+Os principais parâmetros de velocidade e suavidade da navegação 3D podem ser ajustados diretamente no código, no componente `ModelViewer.jsx`, na configuração do `<OrbitControls />`:
+
+- **dampingFactor**: Suavidade do movimento da câmera (padrão: 0.15)
+- **rotateSpeed**: Velocidade de rotação da câmera (padrão: 1.2)
+- **zoomSpeed**: Velocidade do zoom (padrão: 3.0)
+- **panSpeed**: Velocidade do pan (arrastar lateral) (padrão: 1.5)
+- **autoRotateSpeed**: Velocidade de rotação automática (padrão: 2)
+
+Para alterar, edite os valores em:
+```jsx
+<OrbitControls
+    ...
+    dampingFactor={0.15}
+    rotateSpeed={1.2}
+    zoomSpeed={3.0}
+    panSpeed={1.5}
+    autoRotateSpeed={2}
+    ...
+/>
+```
+
+### Como ajustar e salvar posições de câmeras (endpoints)
+
+- Para criar um endpoint/câmera, clique no modelo 3D e selecione a opção de adicionar endpoint.
+- Para editar a posição de uma câmera, navegue até a posição desejada e utilize a função de captura de visão atual (ícone de edição ✏️ na lista de endpoints).
+- As posições são salvas automaticamente no arquivo `project_config.json` ao clicar em "Salvar no Projeto".
+
+### Dicas rápidas
+
+- O enquadramento automático da câmera é feito ao carregar um modelo novo.
+- Para navegação rápida, utilize a aba "Endpoints" e clique no nome da câmera desejada.
+- Os parâmetros de velocidade podem ser ajustados para personalizar a experiência conforme o tipo de modelo ou preferência do usuário.
 
 ---
 
@@ -115,22 +153,8 @@ Toda configuração é salva em `project_config.json` e os arquivos são armazen
 ---
 
 
-## 🚀 Testar Online
-
-👉 [Acesse a aplicação online](https://vistametric.vercel.app/)
-
----
 
 
-<!-- Estrutura de pastas já detalhada acima -->
-
-
-## 📄 Licença e Créditos
-
-Projeto para visualização patrimonial e industrial. Imagens e modelos processados localmente ou via servidor autorizado.
-
-
----
 
 > [!IMPORTANT]
 > **Nota de Experimento**: Este projeto foi desenvolvido 100% usando Inteligência Artificial via Antigravity (Google DeepMind) para testar a capacidade, precisão e velocidade extrema na criação de um MVP complexo em regime no-code assistido.
