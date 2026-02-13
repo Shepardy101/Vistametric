@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    <b>Visualização e mapeamento 3D imersivo para apresentação de ambientes </b>
+    <b>Vistametric é uma plataforma OpenSource de visualização e mapeamento 3D imersivo. Criado em React e Node.js, permite transformar modelos georreferenciados em experiências interativas de alta precisão, integrando ambientes 3D com panoramas de 360º. Projetado para setores como imobiliário, industrial e patrimonial, foi concebido para ser expandido e adaptado por desenvolvedores que desejam colaborar e inovar. </b>
 </p>
 
 ---
