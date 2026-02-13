@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    <b>Visualização e mapeamento 3D imersivo para ambientes profissionais.</b>
+    <b>Vistametric é uma plataforma OpenSource de visualização e mapeamento 3D imersivo. Criado em React e Node.js, permite transformar modelos georreferenciados em experiências interativas de alta precisão, integrando ambientes 3D com panoramas de 360º. Projetado para setores como imobiliário, industrial e patrimonial, projetado para ser expandido e adaptado por desenvolvedores que desejam colaborar e inovar. </b>
 </p>
 
 ---
@@ -145,14 +145,5 @@ O Vistametric opera em dois modos:
 - **Visualizador**: Interface limpa, apenas navegação e visualização.
 Toda configuração é salva em `project_config.json` e os arquivos são armazenados em pastas públicas.
 
----
 
-
-
-
-
-> [!IMPORTANT]
-> **Nota de Experimento**: Este projeto foi desenvolvido 100% usando Inteligência Artificial via Antigravity (Google DeepMind) para testar a capacidade, precisão e velocidade extrema na criação de um MVP complexo em regime no-code assistido.
-
----
 
